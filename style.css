@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: oklab(88.286% -0.03225 -0.05404);
+    color:#05063a
+}
+
+header{
+    background-color:hsl(196, 92%, 91%);
+    padding: 20px 6px;
+    text-align:center;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color:#b96419;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.search-container{
+    max-width: 800px;
+    margin: 30px auto 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.search-container input{
+    background-color:hwb(180 84% 3%);
+    padding: 20px;
+    width: 70%;
+    border-radius: 30px 0 30px 0;
+    border:none;
+    outline:none;
+    font-size: 15px;
+    box-shadow:0 2px 5px rgba(0.1,0,0,0.7);
+}
+
+.search-container button{
+    padding: 20px;
+    margin-left: 5px;
+    border-radius: 0 30px 0 30px;
+    background-color:hwb(28 54% 1%);
+    border:none;
+    outline:none;
+    box-shadow:0 2px 5px rgba(0.1,0,0,0.7);
+    font-size:15px;
+    color:#05063a;
+    cursor:pointer;
+}
+
+.search-container button:hover{
+    background-color:#b96419;
+}
+
+.hero{
+    background-image: url("img/arkaplan.jpg ");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url("img/arkaplan.jpg");
+    background-size:cover;
+    background-position:center;
+    color:lab(89.9% -15.34 -15.54);
+    text-align:center;
+    padding: 100px 50px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.button{
+    margin-top:20px;
+    padding: 15px 30px;
+    display:inline-block;
+    background-color:hwb(28 54% 1%);
+    color:#05063a;
+    text-decoration:none;
+    border-radius:30px;
+    font: size 15px;
+    cursor:pointer;
+}
+
+.button:hover{
+    background-color:#b96419;
+}
+
+.order-button{
+    margin:0 auto;
+    margin-top: 10px;
+    padding: 15px 20px;
+    display:block;
+    background-color:hwb(28 54% 1%);
+    color:#05063a;
+    border-radius:30px;
+    font: size 10px;
+    cursor:pointer;
+}
+
+.promotions, .popüler-yemekler, .tüm-yemekler {
+    max-width: 1200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.promotions h2,
+.popüler-yemekler h2,
+.tüm-yemekler h2 {
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-item{
+    
+    width: calc(33.33% - 20px);
+   background-color:hwb(180 84% 3%);
+   padding: 20px;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   position: relative;
+}
+
+.menu-item:hover{
+    transform: scale(1.17);
+    transition: 300ms all;
+
+}
+
+.menu-item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3,
+.menu-item p{
+    margin-bottom: 17px;
+}
+
+.menu-item span{
+    display: block;
+    font-weight: bold;
+    color:hsl(7, 78%, 54%);
+}
+
+del{
+    color:#bc2b18;
+    opacity:0.7;
+}
+
+.footer{
+    background-color:hwb(180 84% 3%);;
+    padding: 20px;
+    text-align:center;
+    color:#05063a;
+    width: 100%;
+    font-size:large;
+}
+
+@media only screen and (max-width: 480px) {
+    .tüm-yemekler {
+        text-align: center;
+    }
+    .promotions,.popüler-yemekler{
+    text-align:center;
+}
+
+.menu-item{
+    width: 90%;
+    margin: 15px auto;
+}
+}
+
+.menu-item .order-button{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
